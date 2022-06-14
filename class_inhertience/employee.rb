@@ -11,7 +11,11 @@ class Employee
     end
 
     attr_reader :name
-    attr_accessor :boss
+    attr_accessor :boss, :salary
+
+    def bonus(multiplier)
+        salary * multiplier
+    end
 
     # def add_boss
     #     boss.add_sub(self)
